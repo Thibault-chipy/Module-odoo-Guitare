@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="xml_gear_strat" model="guitar_rig.gear">
+            <field name="name">Fender Stratocaster</field>
+            <field name="gear_type">guitar</field>
+            <field name="price">1500</field>
+            <field name="purchase_date">2021-05-12</field>
+            <field name="manufacturer_id" ref="xml_partner_fender"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/strat.jpg"/>
+        </record>
+
+        <record id="xml_gear_bd2" model="guitar_rig.gear">
+            <field name="name">Boss Blues Driver BD-2</field>
+            <field name="gear_type">pedal</field>
+            <field name="price">125</field>
+            <field name="purchase_date">2023-10-01</field>
+            <field name="manufacturer_id" ref="xml_partner_boss"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/blues_driver.jpg"/>
+        </record>
+
+        <record id="xml_gear_amp" model="guitar_rig.gear">
+            <field name="name">Tube Amp Vintage</field>
+            <field name="gear_type">amp</field>
+            <field name="price">900</field>
+            <field name="purchase_date">2019-06-15</field>
+            <field name="manufacturer_id" ref="xml_partner_fender"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/tube_amp.jpg"/>
+        </record>
+
+        <record id="xml_gear_lespaul" model="guitar_rig.gear">
+            <field name="name">Gibson Les Paul Standard</field>
+            <field name="gear_type">guitar</field>
+            <field name="price">2400</field>
+            <field name="purchase_date">2022-01-15</field>
+            <field name="manufacturer_id" ref="xml_partner_gibson"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/les_paul.jpg"/>
+        </record>
+
+        <record id="xml_gear_cigarbox" model="guitar_rig.gear">
+            <field name="name">Cigar Box Guitar Homemade</field>
+            <field name="gear_type">guitar</field>
+            <field name="price">50</field>
+            <field name="purchase_date">2024-01-01</field>
+            <field name="image" type="base64" file="guitar_rig/static/img/cigar_box.jpg"/>
+            </record>
+
+        <record id="xml_gear_jem" model="guitar_rig.gear">
+            <field name="name">Ibanez JEM Steve Vai</field>
+            <field name="gear_type">guitar</field>
+            <field name="price">3000</field>
+            <field name="manufacturer_id" ref="xml_partner_ibanez"/>
+            <field name="purchase_date">2020-09-10</field>
+            <field name="image" type="base64" file="guitar_rig/static/img/jem.jpg"/>
+        </record>
+
+        <record id="xml_gear_frusciante_strat" model="guitar_rig.gear">
+            <field name="name">Fender Stratocaster '62 Reissue (Sunburst)</field>
+            <field name="gear_type">guitar</field>
+            <field name="price">4200</field> <field name="purchase_date">1998-06-15</field>
+            <field name="manufacturer_id" ref="xml_partner_fender"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/frusciante_strat.jpg"/>
+            </record>
+
+        <record id="xml_gear_white_falcon" model="guitar_rig.gear">
+            <field name="name">Gretsch White Falcon 1955</field>
+            <field name="gear_type">guitar</field>
+            <field name="price">3800</field>
+            <field name="purchase_date">1999-03-10</field>
+            <field name="manufacturer_id" ref="xml_partner_gretsch"/>
+            </record>
+
+
+        <record id="xml_gear_ts808" model="guitar_rig.gear">
+            <field name="name">Ibanez Tube Screamer TS808</field>
+            <field name="gear_type">pedal</field>
+            <field name="price">179</field>
+            <field name="purchase_date">2023-01-20</field>
+            <field name="manufacturer_id" ref="xml_partner_ibanez"/>
+        </record>
+
+        <record id="xml_gear_crybaby" model="guitar_rig.gear">
+            <field name="name">Dunlop Cry Baby GCB95</field>
+            <field name="gear_type">pedal</field>
+            <field name="price">99</field>
+            <field name="purchase_date">2022-05-04</field>
+            <field name="manufacturer_id" ref="xml_partner_dunlop"/>
+        </record>
+
+        <record id="xml_gear_ds2" model="guitar_rig.gear">
+            <field name="name">Boss DS-2 Turbo Distortion</field>
+            <field name="gear_type">pedal</field>
+            <field name="price">65</field>
+            <field name="purchase_date">2020-11-12</field>
+            <field name="manufacturer_id" ref="xml_partner_boss"/>
+        </record>
+
+        <record id="xml_gear_bigmuff" model="guitar_rig.gear">
+            <field name="name">EHX Big Muff Pi (Ram's Head)</field>
+            <field name="gear_type">pedal</field>
+            <field name="price">110</field>
+            <field name="purchase_date">2021-08-30</field>
+            <field name="manufacturer_id" ref="xml_partner_ehx"/>
+        </record>
+
+        <record id="xml_gear_rat" model="guitar_rig.gear">
+            <field name="name">Pro Co RAT 2 Distortion</field>
+            <field name="gear_type">pedal</field>
+            <field name="price">85</field>
+            <field name="purchase_date">2024-02-14</field>
+            <field name="manufacturer_id" ref="xml_partner_proco"/>
+        </record>
+
+
+        <record id="xml_gear_jcm800" model="guitar_rig.gear">
+            <field name="name">Marshall JCM800 2203 Head</field>
+            <field name="gear_type">amp</field>
+            <field name="price">2800</field>
+            <field name="purchase_date">2018-07-22</field>
+            <field name="manufacturer_id" ref="xml_partner_marshall"/>
+        </record>
+
+        <record id="xml_gear_ac30" model="guitar_rig.gear">
+            <field name="name">Vox AC30 Top Boost</field>
+            <field name="gear_type">amp</field>
+            <field name="price">1400</field>
+            <field name="purchase_date">2019-12-25</field>
+            <field name="manufacturer_id" ref="xml_partner_vox"/>
+        </record>
+
+        <record id="xml_gear_twin" model="guitar_rig.gear">
+            <field name="name">Fender '65 Twin Reverb Reissue</field>
+            <field name="gear_type">amp</field>
+            <field name="price">1650</field>
+            <field name="purchase_date">2023-06-01</field>
+            <field name="manufacturer_id" ref="xml_partner_fender"/>
+        </record>
+
+    </data>
+</odoo>

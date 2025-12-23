@@ -1,0 +1,62 @@
+<odoo>
+
+   <record id="action_session" model="ir.actions.act_window">
+    <field name="name">Sessions</field>
+    <field name="res_model">guitar_rig.session</field>
+    <field name="view_mode">calendar,list,form</field>
+  </record>
+
+    <record id="view_list_session" model="ir.ui.view">
+    <field name="name">Session List</field>
+    <field name="model">guitar_rig.session</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="name"/>
+        <field name="start_datetime"/>
+        <field name="duration"/>
+        <field name="main_gear_id"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="view_form_session" model="ir.ui.view">
+    <field name="name">Session Form</field>
+    <field name="model">guitar_rig.session</field>
+    <field name="arch" type="xml">
+      <form string="Session de guitare">
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="start_datetime"/>
+            <field name="duration"/>
+            <field name="main_gear_id"/>
+          </group>
+
+          <group string="Matos utilisé">
+            <field name="gear_ids"
+                   widget="many2many_tags"/>
+          </group>
+
+          <group>
+            <field name="notes"/>
+          </group>
+
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_calendar_session" model="ir.ui.view">
+    <field name="name">Session calendrier</field>
+    <field name="model">guitar_rig.session</field>
+    <field name="arch" type="xml">
+      <calendar
+        string="Sessions"
+        date_start="start_datetime">
+        <field name="name"/>
+        <field name="mood"/>
+      </calendar>
+    </field>
+  </record>
+
+</odoo>

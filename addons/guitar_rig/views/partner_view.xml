@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_guitar_inherit" model="ir.ui.view">
+        <field name="name">res.partner.guitar.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            
+            <xpath expr="//field[@name='category_id']" position="after">
+                <field name="is_guitar_brand"/>
+                <field name="brand_type" invisible="is_guitar_brand == False"/> 
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                 <page string="Marque / Luthier" invisible="is_guitar_brand == False">
+                    <group>
+                        <field name="history"/>
+                    </group>
+                 </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

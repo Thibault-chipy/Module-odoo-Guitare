@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_gear_user,GearUser,model_guitar_rig_gear,guitar_rig.guitar_group_user,1,0,0,0
+access_gear_admin,GearAdmin,model_guitar_rig_gear,guitar_rig.guitar_group_admin,1,1,1,1
+access_session_user,SessionUser,model_guitar_rig_session,guitar_rig.guitar_group_user,1,0,0,0
+access_session_admin,SessionAdmin,model_guitar_rig_session,guitar_rig.guitar_group_admin,1,1,1,1

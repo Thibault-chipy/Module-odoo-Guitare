@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <!-- Groupe utilisateur -->
+        <record id="guitar_group_user" model="res.groups">
+        <field name="name">Guitar Rig User</field>
+        <field name="category_id" ref="base.module_category_services_guitarrig"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <record id="guitar_group_admin" model="res.groups">
+        <field name="name">Guitar Rig Admin</field>
+        <field name="implied_ids" eval="[(4, ref('guitar_group_user'))]"/>
+        <field name="category_id" ref="base.module_category_services_guitarrig"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        </record>
+    </data>
+</odoo>

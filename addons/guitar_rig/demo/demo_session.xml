@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="xml_session_vendredi" model="guitar_rig.session">
+            <field name="name">Répète du vendredi</field>
+            <field name="start_datetime">2025-11-26 18:00:00</field>
+            <field name="duration">2.5</field>
+            <field name="notes">Grosse énergie.</field>
+            
+            <field name="main_gear_id" ref="xml_gear_strat"/>
+
+            <field name="gear_ids" eval="[(4, ref('xml_gear_strat')), (4, ref('xml_gear_amp'))]"/>
+        </record>
+
+        <record id="xml_session_test" model="guitar_rig.session">
+            <field name="name">Test Blues Driver</field>
+            <field name="start_datetime">2025-11-25 10:00:00</field>
+            <field name="duration">1.0</field>
+            <field name="notes">Bon crunch.</field>
+            
+            <field name="main_gear_id" ref="xml_gear_bd2"/>
+            
+            <field name="gear_ids" eval="[(4, ref('xml_gear_bd2')), (4, ref('xml_gear_strat'))]"/>
+        </record>
+
+        <record id="xml_session_studio" model="guitar_rig.session">
+            <field name="name">Enregistrement Album</field>
+            <field name="start_datetime">2025-12-01 09:00:00</field>
+            <field name="duration">4.0</field>
+            <field name="notes">Prise parfaite sur le solo.</field>
+            
+            <field name="main_gear_id" ref="xml_gear_lespaul"/>
+            <field name="gear_ids" eval="[(4, ref('xml_gear_lespaul')), (4, ref('xml_gear_cigarbox')),(4, ref('xml_gear_amp')), (4, ref('xml_gear_bd2'))]"/>
+        </record>
+
+        <record id="xml_session_writing" model="guitar_rig.session">
+            <field name="name">Écriture Paroles </field>
+            <field name="start_datetime">2025-12-02 14:00:00</field>
+            <field name="duration">2.0</field>
+            <field name="notes">Pas de guitare, juste papier crayon.</field>
+            
+            </record>
+
+    </data>
+</odoo>

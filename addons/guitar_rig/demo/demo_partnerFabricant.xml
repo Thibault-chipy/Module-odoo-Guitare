@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="xml_partner_fender" model="res.partner">
+            <field name="name">Fender Musical Instruments Corp.</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            
+            <field name="street">17600 N. Perimeter Drive, Suite 100</field>
+            <field name="city">Scottsdale</field>
+            <field name="zip">85255</field>
+            
+            <field name="country_id" ref="base.us"/>
+            
+            <field name="phone">+1 480-596-9600</field>
+            <field name="email">contact@fender.com</field>
+            <field name="website">https://www.fender.com</field>
+
+            <field name="is_guitar_brand">True</field> 
+            <field name="brand_type">industrial</field>
+            
+            <field name="history">Fondée en 1946 par Leo Fender à Fullerton, Californie. 
+Fender est devenue une icône culturelle avec l'invention de la Telecaster (1950) et de la Stratocaster (1954). 
+La marque a révolutionné la musique moderne en démocratisant la guitare électrique Solid Body.</field>
+
+            <field name="image_1920" type="base64" file="guitar_rig/static/img/fender_logo.jpg"/>
+
+            <field name="category_id" eval="[(6,0,[])]"/>
+        </record>
+
+        <record id="xml_partner_boss" model="res.partner">
+            <field name="name">BOSS Corporation</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            <field name="street">2036-1 Nakagawa, Hosoe-cho</field>
+            <field name="city">Hamamatsu</field>
+            <field name="country_id" ref="base.jp"/>
+            <field name="website">https://www.boss.info</field>
+            
+            <field name="is_guitar_brand">True</field>
+            <field name="brand_type">industrial</field>
+            <field name="history">Division de Roland Corporation spécialisée dans les pédales d'effet compactes depuis 1977.</field>
+            
+            <field name="image_1920" type="base64" file="guitar_rig/static/img/boss_logo.png"/>
+        </record>
+
+        <record id="xml_partner_gibson" model="res.partner">
+                    <field name="name">Gibson Brands</field>
+                    <field name="is_company">True</field>
+                    <field name="company_type">company</field>
+                    <field name="is_guitar_brand">True</field>
+                    <field name="brand_type">industrial</field>
+                    <field name="country_id" ref="base.us"/>
+                    <field name="history">Fondée en 1902 par Orville Gibson à Kalamazoo, Michigan. 
+Gibson est célèbre pour ses guitares acoustiques et électriques emblématiques comme la Les Paul et la SG. 
+La marque a joué un rôle crucial dans le développement du son rock et blues.</field>
+                    <field name="image_1920" type="base64" file="guitar_rig/static/img/gibson_logo.png"/>
+
+        </record>
+
+                <record id="xml_partner_ibanez" model="res.partner">
+                    <field name="name">Ibanez Guitars</field>
+                    <field name="is_company">True</field>
+                    <field name="company_type">company</field>
+                    <field name="is_guitar_brand">True</field>
+                    <field name="brand_type">industrial</field>
+                    <field name="country_id" ref="base.jp"/>
+                    <field name="history">Marque japonaise fondée en 1957, célèbre pour ses guitares électriques innovantes et abordables. 
+Ibanez a gagné en popularité dans les années 1980 grâce à ses modèles adaptés au heavy metal et au shred guitar.</field>
+                    <field name="image_1920" type="base64" file="guitar_rig/static/img/ibanez_logo.png"/>
+                </record>
+
+<record id="xml_partner_marshall" model="res.partner">
+            <field name="name">Marshall Amplification</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            <field name="is_guitar_brand">True</field>
+            <field name="brand_type">industrial</field>
+            <field name="country_id" ref="base.uk"/> </record>
+
+        <record id="xml_partner_vox" model="res.partner">
+            <field name="name">Vox Amplification</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            <field name="is_guitar_brand">True</field>
+            <field name="brand_type">industrial</field>
+            <field name="country_id" ref="base.uk"/>
+        </record>
+
+        <record id="xml_partner_gretsch" model="res.partner">
+            <field name="name">Gretsch Guitars</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            <field name="is_guitar_brand">True</field>
+            <field name="brand_type">industrial</field>
+            <field name="country_id" ref="base.us"/>
+        </record>
+
+        <record id="xml_partner_dunlop" model="res.partner">
+            <field name="name">Dunlop Manufacturing</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            <field name="is_guitar_brand">True</field>
+            <field name="brand_type">industrial</field>
+            <field name="country_id" ref="base.us"/>
+        </record>
+
+        <record id="xml_partner_ehx" model="res.partner">
+            <field name="name">Electro-Harmonix</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            <field name="is_guitar_brand">True</field>
+            <field name="brand_type">boutique</field>
+            <field name="country_id" ref="base.us"/>
+        </record>
+
+        <record id="xml_partner_proco" model="res.partner">
+            <field name="name">Pro Co Sound</field>
+            <field name="is_company">True</field>
+            <field name="company_type">company</field>
+            <field name="is_guitar_brand">True</field>
+            <field name="brand_type">industrial</field>
+            <field name="country_id" ref="base.us"/>
+        </record>
+        
+    </data>
+</odoo>

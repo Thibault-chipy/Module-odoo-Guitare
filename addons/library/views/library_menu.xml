@@ -1,0 +1,11 @@
+<odoo>
+<menuitem id="library_menu_root" name="Library"/>
+    <!-- Action pour ouvrir la liste des véhicules -->
+    <record id="action_library_books" model="ir.actions.act_window">
+        <field name="name">Library Books </field>
+        <field name="res_model">library.book</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_library_books" name="Books" parent="library_menu_root" action="action_library_books" sequence="10"/>
+</odoo>

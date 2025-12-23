@@ -1,0 +1,48 @@
+<odoo>
+    <menuitem id="guitarRig_menu_root" name="GuitarRig"/>
+
+    <record id="action_guitarRig_gear" model="ir.actions.act_window">
+        <field name="name">Matériel</field>
+        <field name="res_model">guitar_rig.gear</field>
+        <field name="view_mode">list,kanban,form</field>
+    </record>
+
+    <record id="action_guitarRig_sessions" model="ir.actions.act_window">
+        <field name="name">Sessions</field>
+        <field name="res_model">guitar_rig.session</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="action_guitarRig_manufacturers" model="ir.actions.act_window">
+        <field name="name">Fabricants</field>
+        <field name="res_model">res.partner</field> <field name="view_mode">list,kanban,form</field>
+        
+        <field name="domain">[('is_guitar_brand', '=', True)]</field>
+        
+        <field name="context">
+            {'default_is_guitar_brand': True, 
+             'default_is_company': True,
+             'default_company_type': 'company'}
+        </field>
+    </record>
+    <menuitem id="menu_guitarRig_gear" 
+              name="Matériel" 
+              parent="guitarRig_menu_root" 
+              action="action_guitarRig_gear" 
+              sequence="10"/>
+
+    <menuitem id="menu_guitarRig_sessions" 
+              name="Sessions" 
+              parent="guitarRig_menu_root" 
+              action="action_guitarRig_sessions" 
+              sequence="30"/>
+
+    <menuitem id="menu_guitarRig_manufacturers" 
+              name="Fabricants" 
+              parent="guitarRig_menu_root" 
+              action="action_guitarRig_manufacturers" 
+              sequence="20"/>
+
+
+
+</odoo>
