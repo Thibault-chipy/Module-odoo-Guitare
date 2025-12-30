@@ -77,7 +77,11 @@ Ibanez a gagné en popularité dans les années 1980 grâce à ses modèles adap
             <field name="company_type">company</field>
             <field name="is_guitar_brand">True</field>
             <field name="brand_type">industrial</field>
-            <field name="country_id" ref="base.uk"/> </record>
+            <field name="country_id" ref="base.uk"/> 
+            <field name="image_1920" type="base64" file="guitar_rig/static/img/marshall_logo.jpg"/>
+            <field name="history">Fondée en 1962 par Jim Marshall à Londres, Marshall est devenue une légende dans le monde des amplificateurs de guitare. 
+Les amplis Marshall, avec leur son distinctif "crunchy", ont été adoptés par des icônes du rock comme Jimi Hendrix, Eric Clapton et Slash.</field>
+            </record>
 
         <record id="xml_partner_vox" model="res.partner">
             <field name="name">Vox Amplification</field>
@@ -86,6 +90,8 @@ Ibanez a gagné en popularité dans les années 1980 grâce à ses modèles adap
             <field name="is_guitar_brand">True</field>
             <field name="brand_type">industrial</field>
             <field name="country_id" ref="base.uk"/>
+            <field name="image_1920" type="base64" file="guitar_rig/static/img/vox_logo.png"/>
+            <field name="history">Fondée en 1957 au Royaume-Uni, Vox est célèbre pour ses amplificateurs emblématiques comme le AC30, utilisé par des groupes légendaires tels que The Beatles et The Rolling Stones.</field>
         </record>
 
         <record id="xml_partner_gretsch" model="res.partner">
@@ -95,6 +101,10 @@ Ibanez a gagné en popularité dans les années 1980 grâce à ses modèles adap
             <field name="is_guitar_brand">True</field>
             <field name="brand_type">industrial</field>
             <field name="country_id" ref="base.us"/>
+            <field name="history">Fondée en 1883 par Friedrich Gretsch à Brooklyn, New York. 
+Gretsch est renommée pour ses guitares électriques et acoustiques de haute qualité,
+notamment les modèles à caisse creuse utilisés dans le rockabilly et le jazz.</field>
+            <field name="image_1920" type="base64" file="guitar_rig/static/img/gretsch.png"/>
         </record>
 
         <record id="xml_partner_dunlop" model="res.partner">
@@ -113,6 +123,9 @@ Ibanez a gagné en popularité dans les années 1980 grâce à ses modèles adap
             <field name="is_guitar_brand">True</field>
             <field name="brand_type">boutique</field>
             <field name="country_id" ref="base.us"/>
+            <field name="history">Fondée en 1968 à New York par Mike Matthews, Electro-Harmonix est une marque emblématique de pédales d'effet pour guitare. 
+Connue pour ses innovations comme la Big Muff Pi et la Electric Mistress, EHX a influencé le son de nombreux genres musicaux, du rock au shoegaze.</field>
+            <field name="image_1920" type="base64" file="guitar_rig/static/img/ehx.png"/>
         </record>
 
         <record id="xml_partner_proco" model="res.partner">
