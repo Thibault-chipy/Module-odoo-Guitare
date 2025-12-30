@@ -1,0 +1,8 @@
+.db
+/data
+/pgadmin
+/webdata
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
