@@ -69,6 +69,7 @@
             <field name="price">3800</field>
             <field name="purchase_date">1999-03-10</field>
             <field name="manufacturer_id" ref="xml_partner_gretsch"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/white_falcon.jpg"/>
             </record>
 
 
@@ -78,6 +79,7 @@
             <field name="price">179</field>
             <field name="purchase_date">2023-01-20</field>
             <field name="manufacturer_id" ref="xml_partner_ibanez"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/tube_screamer.png"/>
         </record>
 
         <record id="xml_gear_crybaby" model="guitar_rig.gear">
@@ -86,6 +88,7 @@
             <field name="price">99</field>
             <field name="purchase_date">2022-05-04</field>
             <field name="manufacturer_id" ref="xml_partner_dunlop"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/CB95.jpg"/>
         </record>
 
         <record id="xml_gear_ds2" model="guitar_rig.gear">
@@ -94,14 +97,16 @@
             <field name="price">65</field>
             <field name="purchase_date">2020-11-12</field>
             <field name="manufacturer_id" ref="xml_partner_boss"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/ds2_D_gal.jpg"/>
         </record>
 
         <record id="xml_gear_bigmuff" model="guitar_rig.gear">
-            <field name="name">EHX Big Muff Pi (Ram's Head)</field>
+            <field name="name">EHX Big Muff Pi</field>
             <field name="gear_type">pedal</field>
             <field name="price">110</field>
             <field name="purchase_date">2021-08-30</field>
             <field name="manufacturer_id" ref="xml_partner_ehx"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/big_muff.jpg"/>
         </record>
 
         <record id="xml_gear_rat" model="guitar_rig.gear">
@@ -110,6 +115,7 @@
             <field name="price">85</field>
             <field name="purchase_date">2024-02-14</field>
             <field name="manufacturer_id" ref="xml_partner_proco"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/rat.jpg"/>
         </record>
 
 
@@ -119,6 +125,7 @@
             <field name="price">2800</field>
             <field name="purchase_date">2018-07-22</field>
             <field name="manufacturer_id" ref="xml_partner_marshall"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/marshall.jpg"/>
         </record>
 
         <record id="xml_gear_ac30" model="guitar_rig.gear">
@@ -127,6 +134,7 @@
             <field name="price">1400</field>
             <field name="purchase_date">2019-12-25</field>
             <field name="manufacturer_id" ref="xml_partner_vox"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/vox.jpg"/>
         </record>
 
         <record id="xml_gear_twin" model="guitar_rig.gear">
@@ -135,6 +143,7 @@
             <field name="price">1650</field>
             <field name="purchase_date">2023-06-01</field>
             <field name="manufacturer_id" ref="xml_partner_fender"/>
+            <field name="image" type="base64" file="guitar_rig/static/img/fender.jpg"/>
         </record>
 
     </data>
