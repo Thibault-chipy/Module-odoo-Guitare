@@ -17,7 +17,7 @@
         'views/gear_views.xml',
         'views/session_views.xml',
         'views/partner_view.xml',
-        'views/list_gear_templates.xml',
+        'views/list_gear_template.xml',
     ],
 
     'demo': [        
