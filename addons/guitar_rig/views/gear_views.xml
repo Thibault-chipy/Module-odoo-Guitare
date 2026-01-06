@@ -8,7 +8,7 @@
                 <field name="manufacturer_label"/>
                 <field name="gear_type"/>
                 <field name="manufacturer_country_label"/>
-                <field name="session_count" avg="Moyenne Sessions"/>            
+                <field name="session_count"/>            
             </list>
         </field>
     </record>
