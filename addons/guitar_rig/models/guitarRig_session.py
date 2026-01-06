@@ -22,14 +22,14 @@ class Session(models.Model):
     # 1-N : Many2one vers le gear principal
     main_gear_id = fields.Many2one(
         'guitar_rig.gear',
-        string="Matos principal"
+        string="Matériel principal"
     )
 
     # N-N : tous les gear utilisés
     gear_ids = fields.Many2many(
         'guitar_rig.gear', 'guitar_session_gear_rel',
         'session_id', 'gear_id',
-        string="Matos utilisés"
+        string="Matériel utilisé"
     )
 
 

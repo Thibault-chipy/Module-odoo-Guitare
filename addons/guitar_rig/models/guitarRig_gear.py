@@ -2,14 +2,13 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 class Gear(models.Model):
     _name = 'guitar_rig.gear'
-    _description = 'Élément de matériel (guitare / pédale / plugin / ampli)'
+    _description = 'Élément de matériel (guitare / pédale / ampli)'
 
     name = fields.Char("Nom", required=True)                 # texte
     gear_type = fields.Selection(                            # select
         [
             ('guitar', 'Guitare'),
             ('pedal', 'Pédale'),
-            ('plugin', 'Plugin'),
             ('amp', 'Ampli'),
         ],
         string="Type",
@@ -30,14 +29,14 @@ class Gear(models.Model):
     session_ids = fields.Many2many(
         'guitar_rig.session', 'guitar_session_gear_rel',
         'gear_id', 'session_id',
-        string="Sessions (tous les gear)"
+        string="Sessions (tout le matériel)"
     )
 
     # Relation many2one avec Fabricant
     manufacturer_id = fields.Many2one('res.partner', string="Fabricant", 
                                       domain=[('is_guitar_brand', '=', True)])
 
-# Champ calculé pour l'affichage dans la liste
+    # Champ calculé pour l'affichage dans la liste
     manufacturer_label = fields.Char(
         string="Fabricant",
         compute='_compute_manufacturer_label'
@@ -78,7 +77,7 @@ class Gear(models.Model):
                 
     # champ calculé : nb total de sessions où ce gear apparaît
     session_count = fields.Integer(
-        string="Nb de sessions",
+        string="Nombre de sessions",
         compute='_compute_session_count',
         store=True,
     )
@@ -87,7 +86,8 @@ class Gear(models.Model):
     @api.depends('session_ids', 'main_session_ids')
     def _compute_session_count(self):
         for record in self:
-            record.session_count = len(record.session_ids) + len(record.main_session_ids)
+            all_sessions = set(record.session_ids.ids) | set(record.main_session_ids.ids)
+            record.session_count = len(all_sessions)
     
     
     # Champ visible seulement pour admin (dans la vue)

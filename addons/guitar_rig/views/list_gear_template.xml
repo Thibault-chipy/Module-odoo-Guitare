@@ -64,7 +64,7 @@
         </template>
 
         <record id="menu_gear_web" model="website.menu">
-            <field name="name">Matos</field>
+            <field name="name">Matériel</field>
             <field name="url">/gears</field>
             <field name="parent_id" ref="website.main_menu"/> <field name="sequence" type="int">50</field>
         </record>

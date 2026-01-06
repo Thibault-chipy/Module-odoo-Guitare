@@ -32,7 +32,7 @@
             <field name="main_gear_id"/>
           </group>
 
-          <group string="Matos utilisé">
+          <group string="Matériel utilisé">
             <field name="gear_ids"
                    widget="many2many_tags"/>
           </group>
